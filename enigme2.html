@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Énigme 2 – Le pouvoir du style</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    /* Indice caché : le texte suivant est invisible à l’œil nu */
+    #indice {
+      color: white; /* Sur fond blanc, on ne le voit pas */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Énigme 2 : Le pouvoir du style</h1>
+    <nav>
+      <a href="enigme1.html">Précédente</a> |
+      <a href="enigme3.html">Suivante</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Rappel du jour</h2>
+      <p>
+        Le CSS (Cascading Style Sheets) donne de la <strong>forme et de la couleur</strong> au HTML.
+        Les sélecteurs permettent de cibler des éléments et de leur appliquer un style.
+      </p>
+    </section>
+
+    <section>
+      <h2>Mission</h2>
+      <p>
+        Retrouve le message caché dans cette page. Tu devras inspecter les éléments pour le lire !
+      </p>
+      <p id="indice" style="display: none;"> Indice 3 : Le troisième fragment du code secret est "STYLE"</p>
+    </section>
+
+    <p class="cta"> <a href="enigme3.html">Passer à l'Énigme 3</a></p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - Formation Développeur Web</p>
+  </footer>
+
+  <script src="js/enigme2.js"></script>
+</body>
+</html>

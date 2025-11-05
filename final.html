@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escape Game WebDev – Final</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    #solution {
+      display: none; /* Caché par défaut */
+      margin-top: 20px;
+      padding: 10px;
+      background: #222;
+      color: #0f0;
+      font-family: monospace;
+    }
+    #success {
+      color: lime;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Page finale : Débloquez le code secret !</h1>
+    <nav>
+      <a href="enigme5.html">Énigme précédente</a> |
+      <a href="index.html">Accueil</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Entrez les fragments du code secret</h2>
+      <p>Vous avez collecté 6 fragments. Tapez-les dans l’ordre :</p>
+
+      <form id="codeForm">
+        <input type="text" id="frag1" placeholder="Fragment 1">
+        <input type="text" id="frag2" placeholder="Fragment 2">
+        <input type="text" id="frag3" placeholder="Fragment 3">
+        <input type="text" id="frag4" placeholder="Fragment 4">
+        <input type="text" id="frag5" placeholder="Fragment 5">
+        <input type="text" id="frag6" placeholder="Fragment 6">
+        <button type="submit">Valider</button>
+      </form>
+
+      <p id="success"></p>
+
+      <div id="solution">
+        <h3>Solutions et guide pas à pas :</h3>
+        <ol>
+          <li><strong>Fragment 1 – HTML</strong> : trouvé dans le commentaire de <code>index.html</code>.</li>
+          <li><strong>Fragment 2 – STRUCTURE</strong> : visible dans la console (`console.log`) de <code>enigme1.html</code>.</li>
+          <li><strong>Fragment 3 – STYLE</strong> : caché dans le texte blanc sur fond blanc dans <code>enigme2.html</code>.</li>
+          <li><strong>Fragment 4 – SCRIPT</strong> : dans un commentaire de <code>enigme3.html</code>.</li>
+          <li><strong>Fragment 5 – DOM</strong> : révélé en cliquant sur le bouton correct dans <code>enigme4.html</code>.</li>
+          <li><strong>Fragment 6 – FETCH</strong> : dans l’attribut `data-code` de l’image de <code>enigme5.html</code>, ou via inspection des éléments.</li>
+        </ol>
+        <p>💡 Astuce pédagogique : explorez TOUS les endroits possibles — console, commentaires, images, styles — pour trouver les indices.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - Formation Développeur Web</p>
+  </footer>
+
+  <script src="js/final.js"></script>
+</body>
+</html>
